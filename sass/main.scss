@@ -4,9 +4,17 @@
 @import './base/common';
 @import './base/container';
 
-@import './components/modal-btn';
-@import './components/social-list-links';
 @import './components/logo';
+@import './components/modal-btn';
+@import './components/social-list';
+@import './components/backdrop';
 
+
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/clients';
+@import './layout/footer';
 @import './layout/header';
+@import './layout/hero';
+@import './layout/team';
 

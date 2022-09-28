@@ -45,6 +45,10 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current {
+    color: var(--weblogo-color);
+}
+
 .current::after {
     display: block;
     height: 4px;
