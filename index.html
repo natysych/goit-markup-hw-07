@@ -11,7 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -20,22 +22,22 @@
 
 <header class="header">
     <div class="container header-container">
-    <nav class="navigation">
-        <a href="" class="webstudio"><span class="web">Web</span><span class="studio">Studio</span></a>
-            <ul class="nav-list">
-                <li class="nav-listitem"><a href="./index.html" class="href current">Студія</a></li>
-                <li class="nav-listitem"><a href="./portfolio.html" class="href">Портфоліо</a></li>
+    <nav class="header-navigation">
+        <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+            <ul class="header-navigation-list">
+                <li class="navigation-list-item"><a href="./index.html" class="navigation-list-item-href current">Студія</a></li>
+                <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-list-item-href">Портфоліо</a></li>
          
-                <li class="nav-listitem"><a href="/" class="href">Контакти</a></li>
+                <li class="navigation-list-item"><a href="/" class="navigation-list-item-href">Контакти</a></li>
 
             </ul>
     </nav>
     
-    <ul class="nav-listcontacts">
-            <li class="email">
+    <ul class="navigation-list-contacts">
+            <li class="navigation-list-contacts-email">
                
-            <a href="mailto:info@example.com" class="contacts" >
-                <svg class="envelope contacts" width="16" height="12">
+            <a href="mailto:info@example.com" class="navigation-contacts" >
+                <svg class="envelope navigation-contacts" width="16" height="12">
                     <use 
                     href="./images/sprite.svg#icon-envelope">
                 </use>
@@ -44,10 +46,10 @@
     
             </li>
            
-            <li class="tel">
+            <li class="navigation-list-contacts-tel">
                 
-            <a href="tel:0961111111" class="contacts" >
-                <svg class="smartphone contacts" width="10" height="16">
+            <a href="tel:0961111111" class="navigation-contacts" >
+                <svg class="smartphone navigation-contacts" width="10" height="16">
                     <use 
                     href="./images/sprite.svg#icon-smartphone">
                 </use>
@@ -120,7 +122,7 @@
     <!-- Чем мы занимаемся -->
     <section class="whatwedo section">
         <div class="container">
-        <h2 class="header-h">Чим ми займаємося</h2>
+        <h2 class="section-header">Чим ми займаємося</h2>
         <ul class="pics">
             <li class="pic">
             <img src="./images/imgpic1.jpg" alt="комп'ютер" width="370" height="294"/>
@@ -140,13 +142,13 @@
     <!-- Наша команда   -->
     <section class="section-team section">
         <div class="container">
-        <h2  class="header-h">Наша команда</h2>
+        <h2  class="section-header">Наша команда</h2>
         <ul class="team">
             <li class="team-card"> 
             <img src="./images/imgteam1.jpg" alt="Игорь Демьяненко" width="270"/>
             <div class="teamcontent-wrapper">
             <h3 class="manager">Ігор Дем'яненко</h3>
-            <p class="position" lang="en">Product Designer</p>
+            <p class="manager_position" lang="en">Product Designer</p>
             <ul class="social-list list">
                 <li class="social-list-items">
                     <a class="social-list-link" href="">
@@ -297,7 +299,7 @@
 <!-- Постоянные клиенты   -->
 <section class="section permanentclients">
     <div class="container section-clients">
-        <h2 class="header-h">Постійні клієнти</h2>
+        <h2 class="section-header">Постійні клієнти</h2>
         <ul class="clients">
             <li class="clients-items">
                 <svg class="client-one" width="106" height="60" >
@@ -351,8 +353,8 @@
         <footer class="footer">
        
             <div class="footer-container container"> 
-                <div class="href-and-adress">
-            <a href="" class="webstudio"><span class="web">Web</span><span class="studiofooter">Studio</span></a>
+                <div>
+            <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
     
                 <address>
                 <ul class="nav-footer">
