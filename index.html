@@ -70,11 +70,11 @@
     </div>
     </section>
 
-    <!--Section Advantages --> 
+    <!--SECTION ADVANTAGES --> 
     <section class="section">
         <div class="container">
 
-        <ul class="advantages">
+        <ul class="advantages-section">
             <li class="advantage-items">
                 <div class="advantage-items_pic">
                 <svg class="pic" width="70" height="70">
@@ -121,28 +121,29 @@
         </div>
     </section>
 
-    <!-- What we do section -->
+    <!-- OUR SERVICES SECTION -->
     
-    <section class="whatwedo section">
+    <section class="our-services section">
         <div class="container">
         <h2 class="section-header">Чим ми займаємося</h2>
-        <ul class="pics">
-            <li class="pic">
+        <ul class="our-services-pics">
+            <li class="our-services-pic-items">
             <img src="./images/imgpic1.jpg" alt="комп'ютер" width="370" height="294"/>
-            <p class="label">Десктопні додатки</p>
+            <p class="our-services-pic-items-label">Десктопні додатки</p>
             </li>
-            <li class="pic">
+            <li class="our-services-pic-items">
             <img src="./images/imgpic2.jpg" alt="мобільний телефон" width="370" height="294"/>
-            <p class="label">Мобільні додатки</p>
+            <p class="our-services-pic-items-label">Мобільні додатки</p>
             </li>
-            <li class="pic">
+            <li class="our-services-pic-items">
             <img src="./images/imgpic3.jpg" alt="кольоропередача" width="370" height="294"/> 
-            <p class="label">Дизайнерські рішення</p>
+            <p class="our-services-pic-items-label">Дизайнерські рішення</p>
             </li>
         </ul>
     </div>
     </section>
-    <!-- Наша команда   -->
+    
+    <!-- OUR TEAM   -->
     <section class="section-team section">
         <div class="container">
         <h2  class="section-header">Наша команда</h2>
@@ -188,7 +189,7 @@
             <img src="./images/imgteam2.jpg" alt="Ольга Репина" width="270"/>
             <div class="teamcontent-wrapper"> 
             <h3 class="manager">Ольга Рєпіна</h3>
-            <p class="position" lang="en">Frontend Developer</p>
+            <p class="manager_position" lang="en">Frontend Developer</p>
             <ul class="social-list list">
                 <li class="social-list-items">
                     <a class="social-list-link" href="">
@@ -225,7 +226,7 @@
             <img src="./images/imgteam3.jpg" alt="Николай Тарасов" width="270"/>
             <div class="teamcontent-wrapper">
             <h3 class="manager">Микола Тарасов</h3>
-            <p class="position" lang="en">Marketing</p>
+            <p class="manager_position" lang="en">Marketing</p>
             <ul class="social-list list">
                 <li class="social-list-items">
                     <a class="social-list-link" href="">
@@ -262,7 +263,7 @@
             <img src="./images/imgteam4.jpg" alt="Михаил Ермаков" width="270"/>
             <div class="teamcontent-wrapper">
             <h3 class="manager">Михайло Ермаков</h3>
-            <p class="position" lang="en">UI Designer</p>
+            <p class="manager_position" lang="en">UI Designer</p>
             <ul class="social-list list">
                 <li class="social-list-items">
                     <a class="social-list-link" href="">
@@ -352,26 +353,33 @@
 
         </main>
 
-        <!-- Контакты -->
+    <!-- FOOTER -->
+    
+    <!-- LOGO AND CONTACTS -->
+    
         <footer class="footer">
        
             <div class="footer-container container"> 
                 <div>
-            <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio studiofooter">Studio</span></a>
+            <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio logo-studiofooter">Studio</span></a>
     
                 <address>
-                <ul class="nav-footer">
-                <li class="address">м. Київ, пр-т Лесі Українки, 26</li>
-                <li><a class="contacts-footer" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="contacts-footer" href="tel:+380961111111">+38 097 111 11 11</a></li>
+                <ul class="footer-contacts-navigation">
+                <li class="footer-contacts-address">м. Київ, пр-т Лесі Українки, 26</li>
+                <li><a class="footer-contacts-other" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="footer-contacts-other" href="tel:+380961111111">+38 097 111 11 11</a></li>
                 </ul>
                 </address>
+
                 </div>
 
-                <div class="footer-sections">
+     <!-- SECTION JOIN  -->
+
+                <div class="footer-section-join">
                     
-                <div class="section-join"> 
-                <p class="header-join"><strong>Приєднуйтесь</strong></p>   
+                <div class="footer-section-join-wrapper"> 
+
+                <p class="footer-section-header"><strong>Приєднуйтесь</strong></p>   
                     <ul class="social-list list">
                     <li class="social-list-items">
                         <a class="social-list-link" href="">
@@ -406,8 +414,10 @@
     
                     </div>
 
-                <div class="section-subscription">
-                <p class="header-join"> 
+<!-- FEEDBACK FORM -->
+
+                <div class="footer-section-subscription">
+                <p class="footer-section-header"> 
                     <strong>Підпишіться на розсилку</strong></p>
                     <div class="subscription-form-wrapper"> 
                 <form class="subscription-form" action="javascript:void(0)">
@@ -447,15 +457,15 @@
 
 
 
-    <p class="form-title">Залиште свої дані, ми вам зателефонуємо</p>
+    <p class="contact-form-title">Залиште свої дані, ми вам зателефонуємо</p>
 
                 <form class="contact-form">
                 
                     <label class="contact-form-field">
-                        <span class="field-name-style">Ім'я</span>
+                        <span class="contact-form-field-namestyle">Ім'я</span>
                         <span class="contact-input-form-wrapper">
                             <input name="user-name" class="contact-form-input" type="text" required />
-                            <svg class="svg-icon" width="12" height="12">
+                            <svg class="contact-input-form-icon" width="12" height="12">
                                 <use href="./images/sprite.svg#icon-name">
                                 </use>
                             </svg>
@@ -464,10 +474,10 @@
                     </label>
                 
                     <label class="contact-form-field">
-                        <span class="field-name-style">Телефон</span>
+                        <span class="contact-form-field-namestyle">Телефон</span>
                         <span class="contact-input-form-wrapper">
                             <input name="user-phone" class="contact-form-input" type="tel" required />
-                            <svg class="svg-icon" width="13" height="13">
+                            <svg class="contact-input-form-icon" width="13" height="13">
                                 <use href="./images/sprite.svg#icon-tel">
                                 </use>
                             </svg>
@@ -476,10 +486,10 @@
                     </label>
                 
                     <label class="contact-form-field">
-                        <span class="field-name-style">Пошта</span>
+                        <span class="contact-form-field-namestyle">Пошта</span>
                         <span class="contact-input-form-wrapper">
                             <input name="user-e-mail" class="contact-form-input" type="email" required />
-                            <svg class="svg-icon" width="15" height="12">
+                            <svg class="contact-input-form-icon" width="15" height="12">
                                 <use href="./images/sprite.svg#icon-mail">
                                 </use>
                             </svg>
@@ -488,7 +498,7 @@
                     </label>
                 
                     <label class="contact-form-field">
-                        <span class="field-name-style">Коментар</span>
+                        <span class="contact-form-field-namestyle">Коментар</span>
                         <span class="contact-input-form-wrapper">
                             <textarea name="user-message" 
                             class="contact-form-message" placeholder="Введіть текст"></textarea>
@@ -502,7 +512,7 @@
                         id="policy-checkbox" 
                         required>
                         <label for="policy-checkbox" class="contact-form-checkbox-label">
-                            Погоджуюсь з розсилкою та приймаю &nbsp; <a href="" class="policy-details"> Умови договору</a>
+                            Погоджуюсь з розсилкою та приймаю &nbsp; <a href="" class="agreement-condition"> Умови договору</a>
                         </label>
                     </span>
                     <button type="submit" class="contact-form-submit-btn">
