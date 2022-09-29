@@ -1,13 +1,14 @@
-@import './utils/variables';
+@import './utils/_variables.scss';
 
 @import './base/common';
 @import './base/container';
+@import './base/section';
 
 @import './components/logo';
 @import './components/social-list';
 
-
+@import './layout/blue-icon-overlay';
 @import './layout/footer';
 @import './layout/header-portfolio';
 @import './layout/header';
-@import './layout/portfolio-galery';
+@import './layout/portfolio-gallery';

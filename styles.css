@@ -247,7 +247,7 @@ align-items: flex-start;
 margin-right: 30px;
 }
 .advantage-items {
-flex-basis: calc((100%-4*30px)/4);
+flex-basis: calc((100% - 4*30px)/4);
 }
 .advantage-items_pic {
     display: flex;
@@ -696,10 +696,6 @@ address {
 .modal-close-btn:hover {
     fill: var(--weblogo-color);
     transition: fill 250ms linear;
-}
-.blue-icon-overlay {
-    position: relative;
-    overflow: hidden;
 }
 
 .work-items-wrapper:hover .blue-icon-text {
