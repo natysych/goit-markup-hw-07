@@ -6,12 +6,12 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms linear, visibility 250ms linear;
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+    }
 }
 
 .contact-form-title {
@@ -31,32 +31,70 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
+
+    &:hover {
+        fill: var(--weblogo-color);
+        outline: none;
+        border-color: var(--weblogo-color);
+        transition: fill 250ms linear;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--weblogo-color);
+        transition: border-color 250ms linear;
+    }
+
 }
 
-.contact-form-input:hover,
-.contact-form-message:hover {
-    fill: var(--weblogo-color);
-    outline: none;
-    border-color: var(--weblogo-color);
+.contact-input-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    right: 15px;
     transition: fill 250ms linear;
+
+
+    .contact-form-input:hover+& {
+        fill: var(--weblogo-color);
+        transition: fill 250ms linear;
+    }
+
+    .contact-form-input:focus+& {
+        fill: var(--weblogo-color);
+        transition: fill 250ms linear;
+    }
 }
 
-.contact-form-input:focus,
-.contact-form-message:focus {
-    outline: none;
-    border-color: var(--weblogo-color);
-    transition: border-color 250ms linear;
+.contact-form-message {
+    height: 120px;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    color: #000000;
+
+    &::placeholder {
+        color: rgba(33, 33, 33, 0.2)
+    }
+
+    &:hover {
+        fill: var(--weblogo-color);
+        outline: none;
+        border-color: var(--weblogo-color);
+        transition: fill 250ms linear;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--weblogo-color);
+        transition: border-color 250ms linear;
+    }
 }
 
-.contact-form-input:focus+.svg-icon {
-    fill: var(--weblogo-color);
-    transition: fill 250ms linear;
-}
 
-.contact-form-input:hover+.svg-icon {
-    fill: var(--weblogo-color);
-    transition: fill 250ms linear;
-}
 
 .contact-form-field-namestyle {
     font-weight: 400;
@@ -94,29 +132,6 @@
     padding: 10px 52px;
 }
 
-.contact-form-message {
-    height: 120px;
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-    color: #000000;
-}
-
-.contact-form-message::placeholder {
-    color: rgba(33, 33, 33, 0.2)
-}
-
-.contact-input-form-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    right: 15px;
-    transition: fill 250ms linear;
-}
-
 .contact-form-checkbox-wrapper {
     margin-top: 20px;
     font-weight: 400;
@@ -130,39 +145,60 @@
     width: 16px;
     height: 15px;
     border-radius: 4px;
-}
 
-.contact-form-checkbox:checked+.contact-form-checkbox-label::before {
+    &:checked + .contact-form-checkbox-label::before {
     background-image: url(../images/icon_tik.svg);
     background-color: #2196F3;
     outline: none;
     background-repeat: no-repeat;
     background-size: 11px 8px;
     background-position: 3px 4px;
-}
+    }
 
-.contact-form-checkbox:focus+.contact-form-checkbox-label::before {
-    background-color: #2196F3;
-    outline: none;
+    &:focus + .contact-form-checkbox-label {
+        background-color: #2196F3;
+            outline: none;
+            background-repeat: no-repeat;
+            background-size: 11px 8px;
+            background-position: 3px 4px;
+    }
+
 }
 
 .contact-form-checkbox-label {
     display: flex;
     align-items: center;
+
+    &::before {
+        display: inline-block;
+        content: '';
+        width: 16px;
+        height: 15px;
+        outline: 1px solid rgba(33, 33, 33, 1);
+        border-radius: 2px;
+        cursor: pointer;
+        margin-left: 15px;
+        margin-right: 7px;
+    }
+    // .contact-form-checkbox:focus + & {
+    //     background-color: #2196F3;
+    //     outline: none;
+    //     background-repeat: no-repeat;
+    //     background-size: 11px 8px;
+    //     background-position: 3px 4px;
+        
+    // }
 }
 
-.contact-form-checkbox-label::before {
-    display: inline-block;
-    content: '';
-    width: 16px;
-    height: 15px;
-    outline: 1px solid rgba(33, 33, 33, 1);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-left: 15px;
-    margin-right: 7px;
 
-}
+// .contact-form-checkbox:checked+.contact-form-checkbox-label::before {
+//     background-image: url(../images/icon_tik.svg);
+//     background-color: #2196F3;
+//     outline: none;
+//     background-repeat: no-repeat;
+//     background-size: 11px 8px;
+//     background-position: 3px 4px;
+// }
 
 .agreement-condition {
     text-decoration: underline;

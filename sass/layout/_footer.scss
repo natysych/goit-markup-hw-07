@@ -31,15 +31,22 @@
     letter-spacing: 0.03em;
     color: var(--tel-color);
     margin-bottom: 9px;
-}
 
-.footer-contacts-other:hover {
-    color: var(--weblogo-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--weblogo-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 }
 
 .footer-section-join {
     display: flex;
+
+    & .social-list-link {
+    fill: var(--background);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
 }
 
 .footer-section-header {
@@ -53,10 +60,6 @@
     margin-bottom: 20px;
 }
 
-.footer-section-join .social-list-link {
-    fill: var(--background);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
 
 .footer-section-join-wrapper {
     display: block;

@@ -3,12 +3,12 @@
     align-items: flex-start;
 }
 
-.advantage-items:not(:last-child) {
-    margin-right: 30px;
-}
-
 .advantage-items {
     flex-basis: calc((100% - 4*30px)/4);
+
+    &:not(:last-child) {
+            margin-right: 30px;
+    }
 }
 
 .advantage-items_pic {
