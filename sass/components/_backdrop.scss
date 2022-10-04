@@ -8,9 +8,9 @@
     transition: opacity 250ms linear, visibility 250ms linear;
 
     &.is-hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     }
 }
 
@@ -32,18 +32,20 @@
     border-radius: 4px;
     padding-left: 42px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         fill: var(--weblogo-color);
         outline: none;
         border-color: var(--weblogo-color);
         transition: fill 250ms linear;
     }
 
-    &:focus {
-        outline: none;
-        border-color: var(--weblogo-color);
-        transition: border-color 250ms linear;
+    &:hover+.contact-input-form-icon,
+    &:focus+.contact-input-form-icon {
+        fill: var(--weblogo-color);
+        transition: fill 250ms linear;
     }
+
 }
 
 .contact-input-form-icon {
@@ -76,6 +78,7 @@
     }
 
     &:focus {
+        fill: var(--weblogo-color);
         outline: none;
         border-color: var(--weblogo-color);
         transition: border-color 250ms linear;
@@ -131,7 +134,7 @@
     width: 16px;
     height: 15px;
     border-radius: 4px;
-
+ 
 }
 
 .contact-form-checkbox-label {
@@ -157,20 +160,11 @@
     background-repeat: no-repeat;
     background-size: 11px 8px;
     background-position: 3px 4px;
-    width: 16px;
-    height: 15px;
  }
 
-
  .contact-form-checkbox:focus +  &::before {
-    background-image: url(../images/icon_tik.svg);
     background-color: #2196F3;
     outline: none;
-    background-repeat: no-repeat;
-    background-size: 11px 8px;
-    background-position: 3px 4px;
-    width: 16px;
-    height: 15px;
  }
 }
 

@@ -400,8 +400,17 @@ address {
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-.navigation-contacts:hover, .navigation-contacts:focus {
+.navigation-contacts:focus, .navigation-contacts:hover {
   color: var(--weblogo-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-contacts:hover .envelope, .navigation-contacts:hover .smartphone {
+  fill: var(--weblogo-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-contacts:focus .envelope, .navigation-contacts:focus .smartphone {
   fill: var(--weblogo-color);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -432,13 +441,6 @@ address {
 .smartphone {
   margin-right: 10px;
   fill: var(--tel-color);
-}
-.envelope:focus, .envelope:hover,
-.smartphone:focus,
-.smartphone:hover {
-  color: var(--weblogo-color);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-portfolio {
