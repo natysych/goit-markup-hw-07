@@ -10,3 +10,11 @@
     --iconcolor: #AFB1B8;
     --border-color: #ECECEC;
 }
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    background: var(--background);
+}

@@ -12,9 +12,8 @@
 }
 
 .advantage-items_pic {
-    display: flex;
+    @extend %align !optional;
     justify-content: center;
-    align-items: center;
     background-color: #F5F4FA;
     height: 120px;
     width: 270px;

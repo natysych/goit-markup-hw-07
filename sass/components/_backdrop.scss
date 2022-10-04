@@ -44,7 +44,6 @@
         border-color: var(--weblogo-color);
         transition: border-color 250ms linear;
     }
-
 }
 
 .contact-input-form-icon {
@@ -54,17 +53,6 @@
     transform: translateY(-50%);
     right: 15px;
     transition: fill 250ms linear;
-
-
-    .contact-form-input:hover+& {
-        fill: var(--weblogo-color);
-        transition: fill 250ms linear;
-    }
-
-    .contact-form-input:focus+& {
-        fill: var(--weblogo-color);
-        transition: fill 250ms linear;
-    }
 }
 
 .contact-form-message {
@@ -93,8 +81,6 @@
         transition: border-color 250ms linear;
     }
 }
-
-
 
 .contact-form-field-namestyle {
     font-weight: 400;
@@ -146,23 +132,6 @@
     height: 15px;
     border-radius: 4px;
 
-    &:checked + .contact-form-checkbox-label::before {
-    background-image: url(../images/icon_tik.svg);
-    background-color: #2196F3;
-    outline: none;
-    background-repeat: no-repeat;
-    background-size: 11px 8px;
-    background-position: 3px 4px;
-    }
-
-    &:focus + .contact-form-checkbox-label {
-        background-color: #2196F3;
-            outline: none;
-            background-repeat: no-repeat;
-            background-size: 11px 8px;
-            background-position: 3px 4px;
-    }
-
 }
 
 .contact-form-checkbox-label {
@@ -170,35 +139,40 @@
     align-items: center;
 
     &::before {
-        display: inline-block;
-        content: '';
-        width: 16px;
-        height: 15px;
-        outline: 1px solid rgba(33, 33, 33, 1);
-        border-radius: 2px;
-        cursor: pointer;
-        margin-left: 15px;
-        margin-right: 7px;
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    outline: 1px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 7px;
     }
-    // .contact-form-checkbox:focus + & {
-    //     background-color: #2196F3;
-    //     outline: none;
-    //     background-repeat: no-repeat;
-    //     background-size: 11px 8px;
-    //     background-position: 3px 4px;
-        
-    // }
+
+ .contact-form-checkbox:checked + &::before {
+    background-image: url(../images/icon_tik.svg);
+    background-color: #2196F3;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: 11px 8px;
+    background-position: 3px 4px;
+    width: 16px;
+    height: 15px;
+ }
+
+
+ .contact-form-checkbox:focus +  &::before {
+    background-image: url(../images/icon_tik.svg);
+    background-color: #2196F3;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: 11px 8px;
+    background-position: 3px 4px;
+    width: 16px;
+    height: 15px;
+ }
 }
-
-
-// .contact-form-checkbox:checked+.contact-form-checkbox-label::before {
-//     background-image: url(../images/icon_tik.svg);
-//     background-color: #2196F3;
-//     outline: none;
-//     background-repeat: no-repeat;
-//     background-size: 11px 8px;
-//     background-position: 3px 4px;
-// }
 
 .agreement-condition {
     text-decoration: underline;
